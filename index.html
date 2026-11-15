@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Андреева Екатерина Сергеевна</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-list">
+        <div class="logo-block">
+          <div class="logo" aria-label="Pokémon">
+            <span class="logo-letter">P</span>
+            <span class="logo-letter">o</span>
+            <span class="logo-letter">k</span>
+            <span class="logo-letter">é</span>
+            <span class="logo-letter">m</span>
+            <span class="logo-letter">o</span>
+            <span class="logo-letter">n</span>
+          </div>
+        </div>
+        <div class="header-gif">
+    <img
+        class="header-pokemon left"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/133.gif"
+        alt="Анимированный Иви"
+    >
+
+    <img
+        class="header-pokemon center"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif"
+        alt="Анимированный Пикачу"
+    >
+
+    <img
+        class="header-pokemon right"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/143.gif"
+        alt="Анимированный Снорлакс"
+    >
+</div>
+      </div>
+
+      <p class="header-subtitle">Стартовые покемоны каждого региона</p>
+      <p class="header-call">Выбери своего напарника!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <button class="filter active" data-region="all">Все регионы</button>
+      <button class="filter" data-region="Канто">Канто</button>
+      <button class="filter" data-region="Джото">Джото</button>
+      <button class="filter" data-region="Хоэнн">Хоэнн</button>
+      <button class="filter" data-region="Синно">Синно</button>
+      <button class="filter" data-region="Юнова">Юнова</button>
+      <button class="filter" data-region="Калос">Калос</button>
+      <button class="filter" data-region="Алола">Алола</button>
+      <button class="filter" data-region="Галар">Галар</button>
+      <button class="filter" data-region="Палдеа">Палдеа</button>
+    </section>
+
+    <section id="regions"></section>
+
+        <p class="final-call">Кого ты выберешь?</p>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Закрыть">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-list">
+        <a href="https://t.me/Gdkdggxdy"
+           class="footer-list-link"
+           target="_blank"
+           style="color: #ffcc00; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+          <h5 style="color: #ffcc00; margin: 0;">@Gdkdggxdy</h5>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+               alt="Telegram"
+               style="width: 24px; height: 24px;">
+        </a>
+      </div>
+      <p>Учебный проект · Pokémon и связанные названия принадлежат их правообладателям.</p>
+    </div>
+  </footer>
+  
+  <script src="cookies.js" defer></script>
+  <script src="script.js"></script>
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-text">
+        <strong>Мы используем cookie</strong>
+        <p>
+            Сайт сохраняет только ваше согласие на использование cookie
+            и выбранную тему оформления. Личные данные не собираются.
+        </p>
+    </div>
+
+    <div class="cookie-buttons">
+        <button class="cookie-decline" id="cookieDecline" type="button">
+            Отклонить
+        </button>
+
+        <button class="cookie-accept" id="cookieAccept" type="button">
+            Принять
+        </button>
+    </div>
+</div>
+</body>
+</html>
